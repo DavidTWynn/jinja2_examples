@@ -1,0 +1,10 @@
+{% for os in oss %}
+Hey you are using {{ os }}
+{%if os == 'Linux' %}
+    Linux is a great choice
+{% elif os == "OS/2" %}
+{% if year > 1995 %}
+    WHAT THE
+{% endif %}
+{% endif %}
+{% endfor %}
