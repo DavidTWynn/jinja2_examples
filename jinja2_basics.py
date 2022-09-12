@@ -4,7 +4,7 @@ import jinja2
 def main():
     env = jinja2.Environment(loader=jinja2.PackageLoader("jinja2_basics"))
     env.trim_blocks = True
-    template = env.get_template("basic_template.j2")
+    template = env.get_template("basic_child_template.j2")
     oss = ["Linux", "macOS", "OS/2"]
     year = 2022
 

@@ -1,7 +1,8 @@
 {% for os in oss %}
 Hey you are using {{ os }}
 {%if os == 'Linux' %}
-    Linux is a great choice
+{% block linux_output %}
+{% endblock linux_output%}
 {% elif os == "OS/2" %}
 {% if year > 1995 %}
     WHAT THE
