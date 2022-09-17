@@ -1,0 +1,8 @@
+hostname {{ hostname }}
+ip domain-name {{ domain_name }}
+username {{ local_username }} privilege 15 secret {{ local_secret }}
+crypto key generate rsa modulus 2048
+line vty 0 15
+ login-local
+ no exec-timeout
+ logging-synchronous
